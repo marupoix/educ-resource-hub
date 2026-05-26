@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduHub - Responsive Single-Page Education Resource Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <nav id="main-navigation" class="navbar navbar-expand-lg fixed-top shadow-xs py-3" aria-label="Main Navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+        <span class="d-flex align-items-center justify-content-center bg-teal-light p-2 rounded-2" style="background-color: var(--primary-teal-light); color: var(--primary-teal);">
+          <i class="bi bi-mortarboard-fill fs-4"></i>
+        </span>
+        <span class="font-display fs-4">EduHub</span>
+      </a>
+      <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEduContent" aria-controls="navbarEduContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarEduContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#introduction">About Intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured">Featured</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#categories-section">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resources">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Our Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Support</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#resources" class="btn btn-teal px-4" id="nav-action-btn">
+            <i class="bi bi-search me-1"></i> Search Hub
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero-bg pt-5 border-bottom border-light">
+    <div id="introduction" class="container pt-5">
+      <div class="row align-items-center justify-content-between g-5">
+        <div class="col-lg-6">
+          <span class="edu-tag tag-cs mb-3">Welcome to your learning vault</span>
+          <h1 class="display-4 font-display mb-4">Empower Your Learning Journey</h1>
+          <p class="lead text-muted mb-4 font-sans">
+            Access an authoritative repository of premium study resources, specialized masterclasses, and curated roadmap guides. Designed meticulously to eliminate noise and bridge academic gaps.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#featured" class="btn btn-teal btn-lg px-4 fs-6">
+              Explore Featured <i class="bi bi-arrow-down-short ms-1"></i>
+            </a>
+            <a href="#categories-section" class="btn btn-outline-teal btn-lg px-4 fs-6">
+              Browse Categories
+            </a>
+          </div>
+          <div class="row pt-4 border-top border-light g-3">
+            <div class="col-4">
+              <h5 class="font-display fs-3 mb-0" style="color: var(--primary-teal);">12k+</h5>
+              <small class="text-muted">Curated Tracks</small>
+            </div>
+            <div class="col-4">
+              <h5 class="font-display fs-3 mb-0" style="color: var(--primary-teal);">140+</h5>
+              <small class="text-muted">Countries</small>
+            </div>
+            <div class="col-4">
+              <h5 class="font-display fs-3 mb-0" style="color: var(--primary-teal);">50k+</h5>
+              <small class="text-muted">Active Users</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="position-relative p-4">
+            <div class="position-absolute bg-primary-subtle rounded-5 opacity-25 w-100 h-100" style="top: 0; left: 0; transform: rotate(-3deg); z-index: -1;"></div>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbvcbNxogcImDH5DyQJFyvCKlshmwKcZC79lLnhuiK_DeG0XCPvOUqKv-WJ8rEOvh0j8Q3Ga35ML8gTDXNQP6_2C5Fyt8-l7VT4Wbn7wNAry9k71ijhRrRrDRnyIYF_Ex-WcskTH1EpvsFyfkRxr1r3AULQo75xxSD9nXQdCN74AmfLYxAZq4p3uzE25DMIBCWF-YxGl6jNdwquKusB1_zA5hCNaXU0u25hrvm2-nAX6WykA1y_mS7M1oO3rES7A5V14NT60vOTYc" 
+                 class="img-fluid rounded-4 shadow-lg border" 
+                 alt="Premium study study environment featuring a clean computer on a modern tabletop"
+                 referrerpolicy="no-referrer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="featured" class="container mt-5 pt-5 pb-4">
+      <div class="text-center mb-5">
+        <span class="edu-tag tag-physics mb-2">Curated Highlights</span>
+        <h2 class="font-display fs-1 mb-3">Featured Study Instruments</h2>
+        <p class="text-muted max-w-2xl mx-auto">Explore high-quality modules praised by peer communities for deep concept mastery.</p>
+      </div>
+      
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="edu-card h-100 d-flex flex-col justify-content-between relative">
+            <div>
+              <div class="img-zoom mb-3">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUFRv3PDyV5biaZ5viC-S6--zVMsp3-IfTmnyNRKQWOZPkb45qg6KRYf-wGPJ9kQ99TKRB0CJd42rcdVDFZZhrcq5jyh3Wyf-wnmpZ5Fm9jUwOt_02KiAl-le6Sselo7sFdB2KJ8CjA3pJ5P-4hrZclqrwybre7DzJHdi7it7xrddvM0RWf6iiovQ1g80nM_ch3_JxYUsqXggCgfDMJlBsCYRoSiUuz6R_qRGL4rbDTjTggD21l7CtCakowBmfNg7OF0lY1qOU_hQ" 
+                     alt="Abstract neon geometry patterns symbolizing mathematics"
+                     referrerpolicy="no-referrer">
+                <span class="edu-tag tag-math position-absolute bottom-0 start-0 m-3 shadow-sm rounded-pill py-1 px-3">STEM : Mathematics</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge badge-difficulty diff-advanced"><i class="bi bi-star-fill text-warning me-1"></i> Advanced</span>
+                <span class="text-muted font-mono" style="font-size: 12px;"><i class="bi bi-clock me-1"></i> 14 hrs</span>
+              </div>
+              <h4 class="fs-4 font-display mb-2">Advanced Mathematical Calculus</h4>
+              <p class="text-muted font-sans mb-4">Complete module covering limits, partial derivatives, and complex line integrations with interactive visualizations.</p>
+            </div>
+            <div>
+              <button class="btn btn-outline-teal w-100" onclick="triggerQuickView(0)">
+                <i class="bi bi-journal-text me-1"></i> View Syllabus
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="edu-card h-100 d-flex flex-col justify-content-between relative">
+            <div>
+              <div class="img-zoom mb-3">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5BuOQn57mOidFI75O_zRW_IZ9Yrl57mAVpSJifNUuYqBnsAdfFKOf8l6GJmmAU6wYHbhbYM8xqk1pTG8S4NETHto4lb86FlYlLE5wX6iQW9c_-mBltbbqOKTTilCCXAYUVGkEszo8o7ecPFsINjBGdrYv-1HXS05vF9y8fVnbFnaVd6adkPmSolvVYGgdl5lj3uOiSOyOCF1AsUyG7aHCZACiistMzDbbMTiFp_GPE47Uqk-IXenNROt99p8haRUZgHiP9UrWPA4" 
+                     alt="Laboratory glassware showing chemistry clinical aesthetic"
+                     referrerpolicy="no-referrer">
+                <span class="edu-tag tag-chemistry position-absolute bottom-0 start-0 m-3 shadow-sm rounded-pill py-1 px-3">STEM : Chemistry</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge badge-difficulty diff-intermediate"><i class="bi bi-star-fill text-warning me-1"></i> Intermediate</span>
+                <span class="text-muted font-mono" style="font-size: 12px;"><i class="bi bi-clock me-1"></i> 8 hrs</span>
+              </div>
+              <h4 class="fs-4 font-display mb-2">Organic Synthesis Sandbox</h4>
+              <p class="text-muted font-sans mb-4">Master organic chemistry reactions and synthesis pathways step-by-step with practical laboratory walkthroughs.</p>
+            </div>
+            <div>
+              <button class="btn btn-outline-teal w-100" onclick="triggerQuickView(1)">
+                <i class="bi bi-journal-text me-1"></i> View Syllabus
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="edu-card h-100 d-flex flex-col justify-content-between relative">
+            <div>
+              <div class="img-zoom mb-3">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQv_88FkCSWYw3rtwoxffO5b50Ux9EXWWFsX0mmfgl2gWUK5sJyTWuiBgVJUTazVFsGKcvcEB0z_vV26GRw5vXZ1JUFl8Z7lNExPO5eF10ID1y7hTv6T6FaH0bns_IQUJMFKYZtR7p_givDR8sNArfNXJuMcKCgI4vKLc-dcyYi6YA8ftfQei7JOy5ATXhaIwItSUljVwuXGVod7mPGgj5_bAK4eKoGL5l6kpWHcibTPvLvVgw3Qa26o1gjs9IpJUaS3Er8R4QPro" 
+                     alt="A minimalist art studio with canvas"
+                     referrerpolicy="no-referrer">
+                <span class="edu-tag tag-humanities position-absolute bottom-0 start-0 m-3 shadow-sm rounded-pill py-1 px-3">Humanities : Arts</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <span class="badge badge-difficulty diff-beginner"><i class="bi bi-star-fill text-warning me-1"></i> Beginner</span>
+                <span class="text-muted font-mono" style="font-size: 12px;"><i class="bi bi-clock me-1"></i> 6 hrs</span>
+              </div>
+              <h4 class="fs-4 font-display mb-2">Renaissance & Art History</h4>
+              <p class="text-muted font-sans mb-4">Deep dive into classic eras, art forms, and critical theories that defined Western civilization across centuries.</p>
+            </div>
+            <div>
+              <button class="btn btn-outline-teal w-100" onclick="triggerQuickView(2)">
+                <i class="bi bi-journal-text me-1"></i> View Syllabus
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories-section" class="bg-white border-bottom border-light">
+    <div id="categories" class="container">
+      <div class="row mb-5 justify-content-between align-items-end">
+        <div class="col-md-7">
+          <span class="edu-tag tag-math mb-2">Academic Catalogs</span>
+          <h2 class="font-display fs-1 mb-2">Study Domain Categories</h2>
+          <p class="text-muted font-sans mb-0">Select a category domain to instantly filter the curated research repositories and open study textbooks below.</p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <button class="btn btn-light border btn-sm py-2 px-3 fw-medium" id="btn-reset-filters" style="border-radius: 8px;" onclick="resetResourceFilters()">
+            <i class="bi bi-arrow-counterclockwise"></i> Show All Resources
+          </button>
+        </div>
+      </div>
+
+      <div class="row g-3 justify-content-center mb-5" id="categories-grid">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="edu-card text-center p-3 h-100 d-flex flex-column align-items-center justify-content-center hover:cursor-pointer shadow-xs active-category" 
+               id="cat-math" onclick="filterByCategory('Mathematics', 'cat-math')" style="cursor: pointer; border-bottom: 3.5px solid #0369a1;">
+            <i class="bi bi-calculator fs-2 text-primary mb-2"></i>
+            <h5 class="fs-6 font-display mb-1 text-truncate w-100">Mathematics</h5>
+            <small class="text-muted font-mono style-xs" style="font-size: 11px;">MTH</small>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="edu-card text-center p-3 h-100 d-flex flex-column align-items-center justify-content-center" 
+               id="cat-physics" onclick="filterByCategory('Physics', 'cat-physics')" style="cursor: pointer; border-bottom: 3.5px solid #6b21a8;">
+            <i class="bi bi-radioactive fs-2 text-purple mb-2" style="color: #6b21a8;"></i>
+            <h5 class="fs-6 font-display mb-1 text-truncate w-100">Physics</h5>
+            <small class="text-muted font-mono" style="font-size: 11px;">PHY</small>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="edu-card text-center p-3 h-100 d-flex flex-column align-items-center justify-content-center" 
+               id="cat-chemistry" onclick="filterByCategory('Chemistry', 'cat-chemistry')" style="cursor: pointer; border-bottom: 3.5px solid #9f1239;">
+            <i class="bi bi-heart-pulse-fill fs-2 text-danger mb-2" style="color: #9f1239;"></i>
+            <h5 class="fs-6 font-display mb-1 text-truncate w-100">Chemistry</h5>
+            <small class="text-muted font-mono" style="font-size: 11px;">CHM</small>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="edu-card text-center p-3 h-100 d-flex flex-column align-items-center justify-content-center" 
+               id="cat-cs" onclick="filterByCategory('Computer Science', 'cat-cs')" style="cursor: pointer; border-bottom: 3.5px solid #065f46;">
+            <i class="bi bi-cpu fs-2 text-success mb-2" style="color: #065f46;"></i>
+            <h5 class="fs-6 font-display mb-1 text-truncate w-100">Computer Science</h5>
+            <small class="text-muted font-mono" style="font-size: 11px;">CSC</small>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="edu-card text-center p-3 h-100 d-flex flex-column align-items-center justify-content-center" 
+               id="cat-humanities" onclick="filterByCategory('Humanities', 'cat-humanities')" style="cursor: pointer; border-bottom: 3.5px solid #9a3412;">
+            <i class="bi bi-book-half fs-2 text-warning mb-2" style="color: #9a3412;"></i>
+            <h5 class="fs-6 font-display mb-1 text-truncate w-100">Humanities</h5>
+            <small class="text-muted font-mono" style="font-size: 11px;">HUM</small>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="edu-card text-center p-3 h-100 d-flex flex-column align-items-center justify-content-center" 
+               id="cat-languages" onclick="filterByCategory('Languages & Debate', 'cat-languages')" style="cursor: pointer; border-bottom: 3.5px solid #374151;">
+            <i class="bi bi-translate fs-2 text-dark mb-2" style="color: #374151;"></i>
+            <h5 class="fs-6 font-display mb-1 text-truncate w-100">Languages</h5>
+            <small class="text-muted font-mono" style="font-size: 11px;">LNG</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resources" class="container mt-5 pt-3">
+      <div class="row g-4 mb-4 align-items-center justify-content-between">
+        <div class="col-lg-5">
+          <h3 class="fs-2 font-display mb-0">Vault Directories</h3>
+          <p class="text-muted small">Search and instantly sort your curriculum tracks below.</p>
+        </div>
+        
+        <div class="col-lg-7">
+          <div class="row g-2">
+            <div class="col-md-7">
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-search"></i></span>
+                <input type="text" id="resource-search-input" class="form-control border-start-0 ps-1" placeholder="Search keywords..." oninput="handleSearchFilter()">
+              </div>
+            </div>
+            
+            <div class="col-md-5">
+              <select id="difficulty-filter" class="form-select" onchange="handleDifficultyFilter()">
+                <option value="ALL">Difficulty Level: All</option>
+                <option value="Beginner">Beginner Only</option>
+                <option value="Intermediate">Intermediate Only</option>
+                <option value="Advanced">Advanced Only</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-light p-3 rounded-3 mb-5 d-flex flex-wrap align-items-center justify-content-between gap-3 border border-light-subtle">
+        <div class="d-flex align-items-center gap-2">
+          <span class="d-inline-flex align-items-center justify-content-center bg-teal-light text-teal rounded-circle" style="width: 32px; height: 32px; background-color: var(--primary-teal-light); color: var(--primary-teal);">
+            <i class="bi bi-bookmark-fill"></i>
+          </span>
+          <span class="fw-medium text-dark font-sans" id="bookmark-indicator-text">No Saved Resources</span>
+        </div>
+        <button class="btn btn-sm btn-outline-teal" id="btn-show-saved-only" onclick="toggleShowSavedOnly()">
+          <i class="bi bi-eye"></i> Show Favorited Handouts
+        </button>
+      </div>
+
+      <div class="row g-4" id="resources-grid-container">
+      </div>
+      
+      <div class="text-center py-5 d-none" id="resources-empty-state">
+        <i class="bi bi-folder-x fs-1 text-muted d-block mb-3"></i>
+        <h5 class="fs-4 font-display">No Matches Found</h5>
+        <p class="text-muted max-w-sm mx-auto">Try resetting categories or clearing your search queries keywords to search across other courses.</p>
+        <button class="btn btn-teal mt-2" onclick="resetResourceFilters()">Reset All Filters</button>
+      </div>
+
+      <div class="mt-5 pt-4">
+        <div class="row justify-content-center">
+          <div class="col-xl-9">
+            <div class="timer-container p-4 p-md-5">
+              <div class="row align-items-center g-4">
+                <div class="col-md-5 text-center text-md-start">
+                  <span class="edu-tag tag-chemistry text-white bg-danger mb-3 font-mono">POMODORO ENGAGEMENT WIDGET</span>
+                  <h4 class="text-white fs-3 font-display mb-1">Deep Work Focus Session</h4>
+                  <p class="text-white-50 small mb-0 font-sans">Toggle standard interval timers to promote a distraction-free flow state while studying modules.</p>
+                </div>
+                
+                <div class="col-md-7 text-center">
+                  <div class="d-flex justify-content-center gap-3 mb-3">
+                    <button class="btn btn-sm btn-outline-light active py-1 px-3" id="btn-timer-work" onclick="setTimerType('work')">Study Track (25m)</button>
+                    <button class="btn btn-sm btn-outline-light py-1 px-3" id="btn-timer-break" onclick="setTimerType('break')">Recess/Rest (5m)</button>
+                  </div>
+                  <div class="display-1 font-mono fw-bold text-white mb-3" id="timer-display-visual">25:00</div>
+                  <div class="d-flex justify-content-center gap-2">
+                    <button class="btn btn-teal px-4" id="btn-timer-toggle" onclick="toggleStudyTimer()">
+                      <i class="bi bi-play-fill me-1"></i> Start Flow
+                    </button>
+                    <button class="btn btn-outline-light px-3" onclick="resetStudyTimer()">
+                      <i class="bi bi-arrow-counterclockwise"></i> Reset
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="bg-light border-bottom border-light">
+    <div id="mission" class="container">
+      <div class="row align-items-center g-5 mb-5 pb-5 border-bottom border-light">
+        <div class="col-lg-6">
+          <span class="edu-tag tag-math mb-2 text-primary">Est. Academic Standard</span>
+          <h2 class="font-display fs-1 mb-4 leading-tight">Our Core Mission & Values</h2>
+          <p class="lead text-muted font-sans mb-4">
+            To provide learners globally with structural resources that reduce cognitive fatigue. Through transparent technology and curated courses, we strive to spark lifelong learning.
+          </p>
+          
+          <div class="row g-4">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <div class="bg-teal-light p-2 rounded text-teal" style="background-color: var(--primary-teal-light); color: var(--primary-teal);">
+                  <i class="bi bi-shield-check fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="font-display fs-5 mb-1">Peer Reviewed</h5>
+                  <p class="text-muted small mb-0">Every roadmap is verified by accredited academic educators.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <div class="bg-teal-light p-2 rounded text-teal" style="background-color: var(--primary-teal-light); color: var(--primary-teal);">
+                  <i class="bi bi-people-fill fs-4"></i>
+                </div>
+                <div>
+                  <h5 class="font-display fs-5 mb-1">Community Owned</h5>
+                  <p class="text-muted small mb-0">Built as a non-commercial, public global digital repository.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="edu-card bg-white p-4">
+            <h4 class="font-display fs-4 mb-4"><i class="bi bi-signpost-2-fill text-teal" style="color: var(--primary-teal);"></i> Learning Milestones Dashboard</h4>
+            <div class="timeline-visual">
+              <div class="row mb-3 pb-3 border-bottom border-light">
+                <div class="col-auto font-mono text-muted fw-bold">01</div>
+                <div class="col">
+                  <h6 class="font-display mb-1 fs-6">Syllabus Inception (Q1)</h6>
+                  <p class="text-muted text-xs mb-0" style="font-size: 13px;">Onboarded 10 universities across different academic scopes.</p>
+                </div>
+              </div>
+              
+              <div class="row mb-3 pb-3 border-bottom border-light">
+                <div class="col-auto font-mono text-muted fw-bold">02</div>
+                <div class="col">
+                  <h6 class="font-display mb-1 fs-6">Interactive Simulators (Q2)</h6>
+                  <p class="text-muted text-xs mb-0" style="font-size: 13px;">Added physical sandbox tools directly in browser canvases.</p>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-auto font-mono text-muted fw-bold">03</div>
+                <div class="col">
+                  <h6 class="font-display mb-1 fs-6">Global Peer Study Networks (Q3)</h6>
+                  <p class="text-muted text-xs mb-0" style="font-size: 13px;">Released micro study pods to help study partners synchronize tracks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="container mt-4 pt-4">
+      <div class="text-center mb-5">
+        <span class="edu-tag tag-physics mb-2">Connect Channel</span>
+        <h2 class="font-display fs-1 mb-2">We Are Here To Advise</h2>
+        <p class="text-muted max-w-sm mx-auto">Reach out to request custom textbooks, lodge errors, or submit self-authored roadmaps.</p>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div class="edu-card bg-white h-100 p-4">
+            <h4 class="font-display fs-4 mb-4">Official Channels</h4>
+            
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <span class="btn btn-teal rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 44px; height: 44px; pointer-events: none;">
+                <i class="bi bi-envelope"></i>
+              </span>
+              <div>
+                <small class="text-muted font-mono" style="font-size: 11px;">E-MAIL ADDRESS</small>
+                <div class="d-flex align-items-center gap-2">
+                  <h6 class="mb-0 font-sans" id="channel-email-val">support@eduhub.com</h6>
+                  <button class="btn btn-xs btn-link p-0 text-decoration-none text-teal" onclick="copySupportText('support@eduhub.com', this)" title="Copy Email">
+                    <i class="bi bi-clipboard"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <span class="btn btn-teal rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 44px; height: 44px; pointer-events: none;">
+                <i class="bi bi-phone"></i>
+              </span>
+              <div>
+                <small class="text-muted font-mono" style="font-size: 11px;">CALL SERVICES (TOLL FREE)</small>
+                <h6 class="mb-0 font-sans">+1 (888) 123-4567</h6>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <span class="btn btn-teal rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 44px; height: 44px; pointer-events: none;">
+                <i class="bi bi-geo-alt"></i>
+              </span>
+              <div>
+                <small class="text-muted font-mono" style="font-size: 11px;">HEADQUARTERS LOCATION</small>
+                <h6 class="mb-0 font-sans text-xs" style="font-size: 13px;">42 Knowledge Plaza, Boston MA</h6>
+              </div>
+            </div>
+            
+            <div class="border-top border-light-subtle pt-3 text-center">
+              <h6 class="font-display fs-6 text-muted mb-2">Connect socially</h6>
+              <div class="d-flex justify-content-center gap-2">
+                <a href="#" class="btn btn-xs btn-outline-secondary rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 36px; height: 36px;" aria-label="Github"><i class="bi bi-github"></i></a>
+                <a href="#" class="btn btn-xs btn-outline-secondary rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 36px; height: 36px;" aria-label="Slack"><i class="bi bi-slack"></i></a>
+                <a href="#" class="btn btn-xs btn-outline-secondary rounded-circle d-inline-flex justify-content-center align-items-center" style="width: 36px; height: 36px;" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="edu-card bg-white p-4">
+            <h4 class="font-display fs-4 mb-4">Advisory Contact Form</h4>
+            <div id="contact-form-wrapper">
+              <form id="support-advisory-form" class="needs-validation" novalidate onsubmit="handleContactSubmission(event)">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="contact-name" class="form-label font-sans small fw-semibold">Your Full Name</label>
+                    <input type="text" class="form-control" id="contact-name" placeholder="John Doe" required>
+                    <div class="invalid-feedback">Required field.</div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="contact-email" class="form-label font-sans small fw-semibold">Email Address</label>
+                    <input type="email" class="form-control" id="contact-email" placeholder="john@example.com" required>
+                    <div class="invalid-feedback">Provide a valid email.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="contact-role" class="form-label font-sans small fw-semibold">Your Academic Role</label>
+                    <select class="form-select" id="contact-role" required>
+                      <option value="" disabled selected>Select option</option>
+                      <option value="Student">Student</option>
+                      <option value="Educator/Teacher">Educator / Teacher</option>
+                      <option value="Researcher">Researcher</option>
+                      <option value="General Reader">General Reader</option>
+                    </select>
+                    <div class="invalid-feedback">Please select your role.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="contact-topic" class="form-label font-sans small fw-semibold">Inquiry Subject</label>
+                    <select class="form-select" id="contact-topic" required>
+                      <option value="Resource Query">Curriculum Content / Resource Request</option>
+                      <option value="Bug Error Submission">Bug / Errata Submission</option>
+                      <option value="Collab Proposals">Collaboration Proposal</option>
+                      <option value="Other support">General Inquiry</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="contact-message" class="form-label font-sans small fw-semibold">Detailed Message</label>
+                    <textarea class="form-control" id="contact-message" rows="4" placeholder="How can we advise your track?" required></textarea>
+                    <div class="invalid-feedback">Please write your detailed request.</div>
+                  </div>
+                  
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="contact-subscribe">
+                      <label class="form-check-label small text-muted font-sans" for="contact-subscribe">
+                        Subscribe me to the weekly curated digest for selected categories
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn btn-teal w-100 py-2 fs-6">
+                      <i class="bi bi-send me-1"></i> Dispatch Message to Advisory Board
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+            <div id="contact-success-wrapper" class="d-none text-center py-4">
+              <span class="d-inline-flex align-items-center justify-content-center bg-success text-white rounded-circle mb-3" style="width: 56px; height: 56px;">
+                <i class="bi bi-check-lg fs-3"></i>
+              </span>
+              <h5 class="font-display fs-4 text-success mb-2">Message Dispatched Seamlessly!</h5>
+              <p class="text-muted small max-w-sm mx-auto mb-4">We have received your support advisory request. A counselor will respond to your academics email within 24 hours.</p>
+              
+              <div class="bg-light p-3 rounded-2 text-start font-sans small border border-light-subtle mb-4 mx-auto max-w-sm">
+                <div class="border-bottom pb-2 mb-2"><strong>Submission Summary:</strong></div>
+                <div class="mb-1 text-truncate"><strong>Academic Name:</strong> <span id="summary-name">John Doe</span></div>
+                <div class="mb-1 text-truncate"><strong>E-mail Address:</strong> <span id="summary-email">john@example.com</span></div>
+                <div class="mb-1"><strong>Selected Role:</strong> <span id="summary-role">Student</span></div>
+                <div class="mb-1"><strong>Inquiry Topic:</strong> <span id="summary-topic">Curriculum Content</span></div>
+              </div>
+              
+              <button class="btn btn-outline-teal btn-sm" onclick="resetContactFormState()">
+                <i class="bi bi-arrow-clockwise"></i> Send New Inquiry
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="syllabusDetailsModal" tabindex="-1" aria-labelledby="syllabusModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 rounded-4 shadow-lg overflow-hidden">
+        <div class="modal-header text-white" style="background-color: var(--slate-dark);">
+          <div class="d-flex align-items-center gap-2">
+            <span class="d-inline-flex bg-teal-light rounded-2 text-teal p-2" style="background-color: var(--primary-teal-light); color: var(--primary-teal);">
+              <i class="bi bi-book-half"></i>
+            </span>
+            <div>
+              <h5 class="modal-title font-display fs-5" id="syllabusModalTitle">Resource Syllabus</h5>
+              <span class="edu-tag tag-math font-mono" id="modal-syllabus-category" style="font-size: 10px;">Mathematics</span>
+            </div>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body p-4 font-sans">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <h6 class="fw-bold mb-2">Detailed Track Outline</h6>
+              <p id="modal-syllabus-desc" class="text-muted small">Course syllabus description placeholder...</p>
+              
+              <div class="my-4">
+                <h6 class="fw-bold mb-2"><i class="bi bi-list-stars text-teal" style="color: var(--primary-teal);"></i> Key Learning Objectives</h6>
+                <ul class="text-muted small ps-3 space-y-2" id="modal-syllabus-objectives">
+                  <li>Understand basic theoretical parameters surrounding limits.</li>
+                  <li>Perform independent analysis of scientific variables.</li>
+                  <li>Compose custom analytical graphs representing reactions.</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-lg-5">
+              <div class="bg-light p-3 rounded-3 border">
+                <h6 class="fw-bold mb-3 font-display small text-uppercase text-muted">Track parameters</h6>
+                <div class="d-flex justify-content-between mb-2 small pb-2 border-bottom">
+                  <span class="text-muted">Study Estimate:</span>
+                  <strong id="modal-syllabus-time">14 hours</strong>
+                </div>
+                <div class="d-flex justify-content-between mb-2 small pb-2 border-bottom">
+                  <span class="text-muted">Syllabus Grade:</span>
+                  <span class="badge badge-difficulty diff-advanced" id="modal-syllabus-difficulty">Advanced</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3 small">
+                  <span class="text-muted">Prerequisites:</span>
+                  <strong class="text-end" id="modal-syllabus-prereq">None</strong>
+                </div>
+                
+                <div class="bg-white p-3 rounded border border-light-subtle">
+                  <h6 class="small fw-semibold text-primary mb-2"><i class="bi bi-patch-question"></i> Syllabus Micro-Quiz</h6>
+                  <p class="text-xs text-muted mb-2" id="modal-syllabus-quiz-q" style="font-size: 12px;">Quiz question placeholder?</p>
+                  
+                  <div class="d-flex flex-column gap-1 mb-2">
+                    <button class="btn btn-xs btn-outline-secondary text-start small py-1 px-2" style="font-size: 11px;" id="btn-quiz-opt1" onclick="submitSyllabusQuiz(1)">Option 1</button>
+                    <button class="btn btn-xs btn-outline-secondary text-start small py-1 px-2" style="font-size: 11px;" id="btn-quiz-opt2" onclick="submitSyllabusQuiz(2)">Option 2</button>
+                  </div>
+                  <div id="modal-syllabus-quiz-feedback" class="small fw-medium d-none text-xs">Correct!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal-footer bg-light border-top">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" id="modal-syllabus-cta" class="btn btn-teal text-decoration-none" onclick="triggerClaimNotification()"><i class="bi bi-cloud-arrow-down"></i> Claim Resource Pack</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055;">
+    <div id="claimAchievementToast" class="toast align-items-center text-white bg-dark border-0 rounded-3 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body d-flex align-items-center gap-2 font-sans small">
+          <i class="bi bi-award-fill text-warning fs-5"></i>
+          <span>Track Syllabus and Resource Pack Claimed successfully!</span>
+        </div>
+        <button type="button" class="btn-primary-subtle text-white border-0 me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" style="background:transparent;"><i class="bi bi-x"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="pt-5 pb-4 border-top">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-5">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="d-flex align-items-center justify-content-center bg-teal-light p-2 rounded-2" style="background-color: var(--primary-teal-light); color: var(--primary-teal);">
+              <i class="bi bi-mortarboard-fill fs-4"></i>
+            </span>
+            <span class="font-display fs-4 font-bold text-white">EduHub</span>
+          </div>
+          <p class="text-secondary small font-sans max-w-sm mb-0">
+            A responsive Single-page Education Resource Hub application supporting systematic research and visual study toolkits globally since 2026.
+          </p>
+        </div>
+        
+        <div class="col-sm-6 col-lg-3">
+          <h6 class="text-white font-display fw-bold mb-3">Syllabus Domains</h6>
+          <ul class="list-unstyled small font-sans space-y-2">
+            <li><a href="#categories-section" onclick="filterByCategory('Mathematics', 'cat-math')">Advanced Mathematics</a></li>
+            <li><a href="#categories-section" onclick="filterByCategory('Physics', 'cat-physics')">Quantum Physics</a></li>
+            <li><a href="#categories-section" onclick="filterByCategory('Chemistry', 'cat-chemistry')">Organic Reaction Nodes</a></li>
+            <li><a href="#categories-section" onclick="filterByCategory('Computer Science', 'cat-cs')">Computer System Architecture</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-sm-6 col-lg-4">
+          <h6 class="text-white font-display fw-bold mb-3">Public Declarations</h6>
+          <p class="small text-secondary font-sans mb-3">Get notifications when new textbooks or peer pods are registered.</p>
+          <div class="input-group font-sans small">
+            <input type="email" class="form-control" id="footer-newsletter-email" placeholder="Academics email...">
+            <button class="btn btn-teal" type="button" onclick="subscribeAcademicsNewsletter()"><i class="bi bi-envelope-check"></i></button>
+          </div>
+          <div id="newsletter-feedback" class="small text-success mt-2 d-none font-sans">Successfully subscribed track alerts!</div>
+        </div>
+      </div>
+      
+      <div class="border-top border-secondary pt-4 text-center">
+        <div class="row align-items-center justify-content-between g-3">
+          <div class="col-md-auto text-md-start small">
+            <p class="mb-0 font-sans">&copy; 2026 EduHub Incorporated. Curated under scholarly fair-use directives. All rights reserved.</p>
+          </div>
+          <div class="col-md-auto text-md-end footer-links">
+            <a href="#" class="small me-3">Privacy Statement</a>
+            <a href="#" class="small me-3">Scholarly Fair Use</a>
+            <a href="#contact" class="small fw-semibold">Contact support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  sc
+</body>
+</html>

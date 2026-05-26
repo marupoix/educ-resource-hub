@@ -1,0 +1,260 @@
+/* Premium Visual Tokens and Override Styles */
+    :root {
+      --primary-teal: #0d9488;
+      --primary-teal-dark: #0f766e;
+      --primary-teal-light: #ccfbf1;
+      --slate-dark: #0f172a;
+      --slate-muted: #475569;
+      --slate-light: #f8fafc;
+      --slate-border: #e2e8f0;
+      
+      --font-display: 'Manrope', sans-serif;
+      --font-sans: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--slate-dark);
+      background-color: var(--slate-light);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      color: var(--slate-dark);
+    }
+
+    /* Font Utility Enforcers */
+    .font-sans { font-family: var(--font-sans); }
+    .font-display { font-family: var(--font-display); }
+    .font-mono { font-family: var(--font-mono); }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--slate-light);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    /* Animated Section Loaders */
+    section {
+      padding: 100px 0;
+      scroll-margin-top: 70px;
+    }
+
+    /* Custom Cards and Elevation styling */
+    .edu-card {
+      background: #ffffff;
+      border: 1px solid var(--slate-border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0px 4px 20px rgba(15, 23, 42, 0.03);
+    }
+    .edu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 12px 30px rgba(15, 23, 42, 0.07);
+      border-color: #cbd5e1;
+    }
+
+    /* Primary Accent Button Styles */
+    .btn-teal {
+      background-color: var(--primary-teal);
+      color: #ffffff;
+      border-radius: 8px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+    .btn-teal:hover {
+      background-color: var(--primary-teal-dark);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+    .btn-outline-teal {
+      color: var(--primary-teal);
+      border: 1.5px solid var(--primary-teal);
+      border-radius: 8px;
+      font-weight: 600;
+      background-color: transparent;
+      transition: all 0.2s ease;
+    }
+    .btn-outline-teal:hover {
+      background-color: var(--primary-teal);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    /* Navbar styling overrides */
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.9) !important;
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--slate-border);
+      transition: all 0.3s ease;
+    }
+    .navbar-brand {
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--slate-dark) !important;
+    }
+    .nav-link {
+      font-weight: 500;
+      color: var(--slate-muted) !important;
+      position: relative;
+      transition: color 0.2s ease;
+      padding: 0.5rem 1rem !important;
+    }
+    .nav-link:hover {
+      color: var(--primary-teal) !important;
+    }
+    .nav-link.active {
+      color: var(--primary-teal) !important;
+      font-weight: 600;
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 1rem;
+      right: 1rem;
+      height: 2.5px;
+      background-color: var(--primary-teal);
+      border-radius: 2px;
+    }
+
+    /* Custom Tags */
+    .edu-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+    .tag-math { background-color: #e0f2fe; color: #0369a1; }
+    .tag-physics { background-color: #f3e8ff; color: #6b21a8; }
+    .tag-chemistry { background-color: #fef1f2; color: #9f1239; }
+    .tag-cs { background-color: #ecfdf5; color: #065f46; }
+    .tag-humanities { background-color: #fff7ed; color: #9a3412; }
+    .tag-languages { background-color: #f5f5f7; color: #374151; }
+
+    /* Difficulty Badges */
+    .badge-difficulty {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+    .diff-beginner { background-color: #dcfce7; color: #15803d; }
+    .diff-intermediate { background-color: #fef9c3; color: #a16207; }
+    .diff-advanced { background-color: #fee2e2; color: #b91c1c; }
+
+    /* Pomodoro Timer Specifics */
+    .timer-container {
+      background: radial-gradient(circle at 10% 20%, rgb(15, 23, 42) 0%, rgb(30, 41, 59) 90%);
+      color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+    }
+
+    /* Footer support */
+    footer {
+      background-color: var(--slate-dark);
+      color: #94a3b8;
+    }
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    footer a:hover {
+      color: var(--primary-teal);
+    }
+
+    /* Hero Ambient BG Gradients */
+    .hero-bg {
+      position: relative;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      top: -150px;
+      right: -150px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(13,148,136,0.12) 0%, rgba(255,255,255,0) 70%);
+      pointer-events: none;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, rgba(255,255,255,0) 70%);
+      pointer-events: none;
+    }
+
+    /* Smooth image transitions */
+    .img-zoom {
+      overflow: hidden;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      height: 180px;
+      position: relative;
+    }
+    .img-zoom img {
+      transition: transform 0.5s ease;
+      height: 100%;
+      width: 100%;
+      object-cover: fill;
+    }
+    .edu-card:hover .img-zoom img {
+      transform: scale(1.06);
+    }
+    
+    /* Bookmark button style */
+    .btn-bookmark {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 5;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--slate-dark);
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+    }
+    .btn-bookmark:hover {
+      transform: scale(1.1);
+      background-color: #ffffff;
+      color: #dc2626;
+    }
+    .btn-bookmark.active {
+      background-color: var(--primary-teal);
+      color: #ffffff;
+    }
